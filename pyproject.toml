@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "nara"
+version = "0.0.1"
+readme = "README.md"
+description = "A plugin package"
+authors = ["A O <adhambek.otabekov.post@gmail.com>"]
+
+packages = [
+    { include = "nara", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tomli = "==2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
